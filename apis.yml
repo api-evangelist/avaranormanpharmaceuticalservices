@@ -59,7 +59,7 @@ x-coverage:
   evidence:
     - url: https://api.avara.com/openapi.json
       status: 301
-  checked: 2026-09-26
+  checked: '2026-09-26'
 x-enrichment:
   date: '2026-09-26'
   status: enriched
