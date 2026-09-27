@@ -1,23 +1,68 @@
 aid: avaranormanpharmaceuticalservices
+
 name: Avaranormanpharmaceuticalservices
-description: 'Avaranormanpharmaceuticalservices is a company surfaced via the API Evangelist harvest backlog
-  (source: secondary-market) and added to the network as a stub for full-pipeline profiling.'
+
+image: http://static1.squarespace.com/static/61a4f9433147f1620cd39114/t/61b3f7afc53ada2b3b709f0f/1639184303834/avara_purple-with-services.png?format=1500w
+
+description: 'Avaranormanpharmaceuticalservices is a pharmaceutical services company identified in the API Evangelist secondary-market harvest. The stub entry currently lacks detailed public information about its operations, products, or API offerings. Further research is required to enrich its profile with accurate website, documentation, and service details.'
+
 url: https://raw.githubusercontent.com/api-evangelist/avaranormanpharmaceuticalservices/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-26 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
 - Company
-apis: []
+- Pharmaceutical
+- Services
+- Healthcare
+- Biotechnology
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/avaranormanpharmaceuticalservices-hosts.yml
+- type: Vendors
+  url: vendors/avaranormanpharmaceuticalservices-vendors.yml
+- type: PrivacyPolicy
+  url: https://www.avara.com/privacy-policy
+- type: Leadership
+  url: https://www.avara.com/team
+- type: DomainSecurity
+  url: security/avaranormanpharmaceuticalservices-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/avaranormanpharmaceuticalservices
+  url: https://www.avara.com
+
+# Added by contract module for avaranormanpharmaceuticalservices
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: No API specification or documentation was found; attempts to fetch OpenAPI at https://api.avara.com/openapi.json returned only redirects.
+  evidence:
+    - url: https://api.avara.com/openapi.json
+      status: 301
+  checked: 2026-09-26
+x-enrichment:
+  date: '2026-09-26'
+  status: enriched
+  artifacts_added: 6
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
